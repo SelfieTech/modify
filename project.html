@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hemant & Hemant</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        	body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+   margin-top: -20px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Add everything below here */
+
+#hero {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url("C:/Users/hp/Desktop/ty/f1.jpg");
+}
+
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('C:/Users/hp/Desktop/ty/f2.jpg');
+}
+
+#contact {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('C:/Users/hp/Desktop/ty/f3.jpg');
+}
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+}
+.overlay {
+  position: absolute;
+  top: -38px;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: auto;
+  transition: .5s ease;
+
+}
+
+.container:hover .overlay {
+  width: 100%;
+  height: 50px;
+  top: -38px;
+  left: 0;
+
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+.profile-imge { 
+			animation: fadeInAnimation ease 3s; 
+			animation-iteration-count: 1; 
+			animation-fill-mode: forwards; 
+			margin-top: 20px;
+		} 
+		@keyframes fadeInAnimation { 
+			0% { 
+				opacity: 0; 
+			} 
+			100% { 
+				opacity: 1; 
+			} 
+
+	} 
+
+		.text:hover { 
+			animation: fadeInAnimation ease 3s; 
+			animation-iteration-count: 1; 
+			animation-fill-mode: forwards; 
+		} 
+		@keyframes fadeInAnimation { 
+			0% { 
+				opacity: 0; 
+			} 
+			100% { 
+				opacity: 1; 
+			} 
+		} 
+
+		.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: grey;
+  color: red;
+  cursor: pointer;
+  font-size: 18px;
+}
+.active, .btn:hover {
+  background-color: navy;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+li a {
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    font-size: 17px;
+    letter-spacing: 4px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+    margin-top: 20px;
+    
+}
+
+
+li a :hover {
+    background-color: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,0 0 25px #03e9f4,0 0 50px #03e9f4,0 0 200px #03e9f4;
+    
+}
+
+.cv:hover {
+    background-color: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,0 0 25px #03e9f4,0 0 50px #03e9f4,0 0 200px #03e9f4;
+    font-size: 17px;
+    
+}
+.cv{
+	font-size: 20px;
+	margin-top: 10px;
+	color: navy;
+}
+
+a:nth-child(1){
+    filter: hue-rotate(290deg);
+}
+
+a:nth-child(3){
+    filter: hue-rotate(110deg);
+}
+
+a span {
+    display: block;
+    position: absolute;
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(90deg, transparent,red);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+a span:nth-child(2){
+    top: 100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(180deg, transparent,red);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(290deg, transparent,red);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+a span:nth-child(4){
+    top: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(360deg, transparent,red);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0%{
+        top: 100%;
+    }
+    50%,100%{
+        top: -100%;
+    }
+}
+
+
+#btn1{
+	font-size: 17px;
+
+}
+
+
+
+.yu{
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+#gh{
+	margin-left: 477px;
+}
+
+
+
+#gh :hover {
+    background-color: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,0 0 25px #03e9f4,0 0 50px #03e9f4,0 0 200px #03e9f4;
+    
+}
+
+.cv:hover {
+    background-color: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,0 0 25px #03e9f4,0 0 50px #03e9f4,0 0 200px #03e9f4;
+    font-size: 17px;
+    
+}
+.cv{
+	font-size: 20px;
+	margin-top: 10px;
+	color: navy;
+}
+
+a:nth-child(1){
+    filter: hue-rotate(290deg);
+}
+
+a:nth-child(3){
+    filter: hue-rotate(110deg);
+}
+
+a span {
+    display: block;
+    position: absolute;
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(90deg, transparent,red);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+a span:nth-child(2){
+    top: 100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(180deg, transparent,red);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(290deg, transparent,red);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+a span:nth-child(4){
+    top: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-image: linear-gradient(360deg, transparent,red);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0%{
+        top: 100%;
+    }
+    50%,100%{
+        top: -100%;
+    }
+}
+
+
+
+
+.sd { 
+			position: absolute; 
+			top: 40%; 
+			left: 40%; 
+			transform: translate(-50%, -50%); 
+			width: 150px; 
+			height: 60px; 
+			color: white; 
+			text-decoration: none; 
+			text-align: center; 
+			padding-top: 25px; 
+			padding-left: 27px;
+			font-size: 20px; 
+			overflow: hidden; 
+			background: green; 
+			margin-left: 830px;
+		} 
+
+		.sd::before { 
+			content: ""; 
+			position: absolute; 
+			width: 0; 
+			height: 0; 
+			left: 0; 
+			bottom: 0; 
+			border-style: solid; 
+			border-color: #f00; 
+			border-width: 80px 100px; 
+			z-index: -1; 
+			transform: rotate(360deg); 
+			transition: 1s; 
+			transform-origin: left; 
+		} 
+
+		.sd:hover::before { 
+			border-color: #00f; 
+			transform: rotate(60deg); 
+		} 
+
+
+
+        </style>
+    </head>
+    <body>
+    	<iframe src=”E:\music\besharmi_ki_height.mp3″ type=”audio/mp3″ allow=”autoplay” id=”audio” style=”display:none”></iframe>
+<audio autoplay>
+<source src=”E:\music\besharmi_ki_height.mp3″ type=”audio/mp3″>
+</audio>
+
+         <header>
+          <a href="C:\Users\hp\Desktop\ty\cars.html">
+            <div class="container">
+          	<img src="C:\Users\hp\Desktop\ty\rs_7.jpg" class="profile-imge">
+          	<div class="overlay">
+          	<img src="C:\Users\hp\Desktop\ty\cars.jpg" class="text">
+          	</div>
+          	</div>	
+          </a>
+            <nav id="mn">
+                <ul>
+                    <li><a class="btn" href="#hero"><span></span><span></span><span></span><span></span>Home</a></li>
+                    <li><a class="btn" href="#about"><span></span><span></span><span></span><span></span>About</a></li>
+                    
+                    <li><a class="btn" href="C:\Users\hp\Desktop\ty\photos.html"><span></span><span></span><span></span><span></span>Photos</a></li>
+                    <li><a class="btn" href="C:\Users\hp\Desktop\ty\index.html"><span></span><span></span><span></span><span></span>Suggestions</a></li>
+                    <li><a class="btn" id="btn1" href="#contact"><span></span><span></span><span></span><span></span>Contact</a></li>
+                    <li><a class="sd" href="C:\Users\hp\Desktop\neon.html">Switch</a></li>
+                  </ul>
+            </nav> 
+        </header>
+        <main>
+            <section id="hero">
+               <div class="section-inner">
+                    <a href="C:\Users\hp\Desktop\ty\personal.html"><img src="C:\Users\hp\Desktop\ty\audi.jpg" class="profile-img"></a>
+                    <h1 class="yu">Hello LUV !!!</h1>
+                </div>  
+            </section>
+            <section id="about">
+              <div class="section-inner">
+                    <h2>About me</h2>
+                    <p>I'm 
+                    	<ol>
+                    	<li>DARING (Not affraid of difficulties)</li>
+                    	<li>CLASSY (Type of Gentleman)</li>
+                    	<li>UNFLAPPABLE (Remain calm in toughest situations)</li>
+                        </ol>
+                    </p>
+                   
+                </div>   
+            </section>
+            <section id="contact">
+               <div class="section-inner">
+                    <h2 class="cv">Contact me</h2>
+                    <p class="cv">You can find me on:</p>
+                    <ul>
+                        <li><a class="cv" href="https://twitter.com/_hemant_tolani">Twitter</a></li>
+                        <li><a class="cv" href="https://www.facebook.com/hemant.tolani.31/">Facebook</a></li>
+                        <li><a class="cv" href="https://www.instagram.com/the_hemanttolani/">Instagram</a></li>
+                    </ul>
+                    <p><br><br><br>Or, you can <br><a class="cv" href="mailto:name@domain">send me an email</a>.</p>
+                </div>  
+            </section>
+        </main>
+        <footer>
+   <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("mn");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+
+</script>
+    </body>
+</html>
